@@ -1,31 +1,33 @@
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { MapView } from 'expo';
-
+// import React, { Component } from 'react';
+// import { View, Text } from 'react-native';
+// import { MapView } from 'expo';
+//
 // const Marker = MapView.Marker
 
-export default class Map extends Component {
-  renderMarkers() {
-    return this.props.places.map((place, i) => (
-      <h4>{place, i}</h4>
-      // <Marker key={i} title={place.name} coordinate={place.coords} />
-    ))
-  }
-
-  render() {
-    const { region } = this.props
-    return (
-      <MapView
-        style={styles.container}
-        region={region}
-        showsUserLocation
-        showsMyLocationButton
-      >
-        {this.renderMarkers()}
-      </MapView>
-    )
-  }
-}
+// export default class Map extends Component {
+//   renderMarkers() {
+//     return this.props.places.map((place, i) => (
+//       <>
+//       <h4>{place, i}</h4>
+//       <Marker key={i} title={place.name} coordinate={place.coords} />
+//       </>
+//     ))
+//   }
+//
+//   render() {
+//     const { region } = this.props
+//     return (
+//       <MapView
+//         style={styles.container}
+//         region={region}
+//         showsUserLocation
+//         showsMyLocationButton
+//       >
+//       Map View  {this.renderMarkers()}
+//       </MapView>
+//     )
+//   }
+// }
 const styles = {
   container: {
     width: '100%',
